@@ -1,16 +1,19 @@
 package com.sustech.app;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+import java.util.HashMap;
+import java.lang.reflect.*;
+// import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class App {
+    public static void main(String[] args) {
         GameText gameText = new GameText();
         GameTextPrinter gameTextPrinter = new GameTextPrinter();
         gameText.initVals();
-        gameTextPrinter.printTextAndOptions(GameText.t0ip1);
-        String currval = gameTextPrinter.printTextAndOptions(ReflectUtils.getValueOf(gameText, currval));
-        while(currval!="gameover"){
-            currval = gameTextPrinter.printTextAndOptions(ReflectUtils.getValueOf(gameText, currval));
+        String currval = "t0ip1";
+        
+        currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
+        while(currval!="exit"){
+            currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
         }
         // System.out.println( "Hello World!" );
         // System.out.println(System.getProperty("java.version"));

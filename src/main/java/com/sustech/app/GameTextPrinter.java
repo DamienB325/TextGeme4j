@@ -18,11 +18,11 @@ public class GameTextPrinter {
         printText(theHashMap);
         printOptions(theHashMap);
         System.out.println("Enter your choice: ");
-        int hamburgerint = myObj.nextInt();
-        String nextVal = handleChoice(theHashMap, hamburgerint);
+        String choice = myObj.next();
+        String nextVal = theHashMap.get("nextval" + choice);
         return nextVal;
     }
-    public String handleChoice(HashMap<String, String> theHashMap, int choice) {
+    public String handleChoice(HashMap<String, String> theHashMap, String choice) {
         String nextVal = theHashMap.get("nextval" + choice);
         System.out.println(nextVal);
         return nextVal;
