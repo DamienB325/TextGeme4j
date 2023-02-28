@@ -11,7 +11,7 @@
             <uniqueVersion>false</uniqueVersion>
             <id>TextGeme4j</id>
             <name>Main Repository</name>
-            <url>https://github.com/DamienB325/TextGeme4j.git</url>
+            <url>https://github.com/DamienB325/TextGeme4j</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
