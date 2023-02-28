@@ -7,11 +7,11 @@ public class GameText {
     public static HashMap<String, String> t0ip1 = new HashMap<>();
     public static HashMap<String, String> gameover = new HashMap<>();
     public void initVals() {
-        t0ip1.put("text","You wake up in a dark room. You can't remember anything. You see a door in front of you.");
+        t0ip1.put("text","You wake up in a dark room. You can't remember anything. You see a door in front of you. What do you do?");
         t0ip1.put("nextval","t0ip2");
         t0ip1.put("choicesnum","2");
-        t0ip1.put("choice1","Hamburger");
-        t0ip1.put("choice2","Hambruger");
+        t0ip1.put("choice1","Get up and open the door");
+        t0ip1.put("choice2","Go Back to Sleep");
         t0ip1.put("nextval1","t0ip2");
         t0ip1.put("nextval2","gameover");
         gameover.put("text","Game Over");
