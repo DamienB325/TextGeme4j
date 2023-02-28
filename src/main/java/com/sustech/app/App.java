@@ -9,11 +9,19 @@ public class App {
         GameText gameText = new GameText();
         GameTextPrinter gameTextPrinter = new GameTextPrinter();
         gameText.initVals();
-        String currval = "t0ip1";
+        String currval = "g0ip1";
+        HashMap<String, String> currhashmap = gameText.thehashmaps.get(currval);
         gameTextPrinter.clearScreen();
-        currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
-        while(currval!="exit"){
-            currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
+        currval = gameTextPrinter.printTextAndOptions(currhashmap);
+        while(currval!="exit") {
+            try {
+                currhashmap = gameText.thehashmaps.get(currval);
+                currval = gameTextPrinter.printTextAndOptions(currhashmap);
+            } catch (Exception e) {
+                System.out.println("Error: " + e);
+                // System.out.println("Error: " + e.getMessage());
+                currval = "exit";
+            }
         }
         // System.out.println( "Hello World!" );
         // System.out.println(System.getProperty("java.version"));

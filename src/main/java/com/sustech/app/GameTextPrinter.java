@@ -17,7 +17,7 @@ public class GameTextPrinter {
     public String printTextAndOptions(HashMap<String, String> theHashMap) {
         printText(theHashMap);
         printOptions(theHashMap);
-        System.out.println("Enter your choice: ");
+        System.out.print("Enter your choice: ");
         String choice = myObj.next();
         String nextVal = theHashMap.get("nextval" + choice);
         clearScreen();
