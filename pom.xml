@@ -5,6 +5,10 @@
    <artifactId>TextGeme4j</artifactId>
    <version>0.0.1-ALPHA</version>
    <name>TextGeme4j</name>
+   <distributionManagement>
+    <downloadUrl>https://github.com/DamienB325/TextGeme4j/releases</downloadUrl>
+    <status>deployed</status>
+   </distributionManagement>
    <!-- FIXME change it to the project's website -->
    <url>http://www.example.com</url>
    <properties>
