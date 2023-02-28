@@ -20,11 +20,16 @@ public class GameTextPrinter {
         System.out.println("Enter your choice: ");
         String choice = myObj.next();
         String nextVal = theHashMap.get("nextval" + choice);
+        clearScreen();
         return nextVal;
     }
     public String handleChoice(HashMap<String, String> theHashMap, String choice) {
         String nextVal = theHashMap.get("nextval" + choice);
         System.out.println(nextVal);
         return nextVal;
+    }
+    public void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 }

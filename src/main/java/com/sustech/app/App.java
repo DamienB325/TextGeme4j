@@ -10,7 +10,7 @@ public class App {
         GameTextPrinter gameTextPrinter = new GameTextPrinter();
         gameText.initVals();
         String currval = "t0ip1";
-        
+        gameTextPrinter.clearScreen();
         currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
         while(currval!="exit"){
             currval = gameTextPrinter.printTextAndOptions(gameText.thehashmaps.get(currval));
