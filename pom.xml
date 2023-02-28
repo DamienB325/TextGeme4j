@@ -9,9 +9,9 @@
         <downloadUrl>https://github.com/DamienB325/TextGeme4j/releases</downloadUrl>
         <repository>
             <uniqueVersion>false</uniqueVersion>
-            <id>corp1</id>
-            <name>Corporate Repository</name>
-            <url>scp://repo/maven2</url>
+            <id>TextGeme4j</id>
+            <name>Main Repository</name>
+            <url>https://github.com/DamienB325/TextGeme4j.git</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
